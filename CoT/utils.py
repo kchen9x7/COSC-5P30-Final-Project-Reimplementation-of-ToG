@@ -3,12 +3,15 @@ import time
 import json
 
 def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-turbo"):
-    if "llama" not in engine.lower():
+    f = 0  # Initialize f before use
+    
+    if "llama" in engine.lower():
         openai.api_key = "EMPTY"
         openai.api_base = "http://localhost:8000/v1"  # your local llama server port
         engine = openai.Model.list()["data"][0]["id"]
     else:
         openai.api_key = opeani_api_keys
+        openai.api_base = "https://api.openai.com/v1"
 
     messages = [{"role":"system","content":"You are an AI assistant that helps people find information."}]
     message_prompt = {"role":"user","content":prompt}
