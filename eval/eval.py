@@ -17,7 +17,12 @@ if __name__ == '__main__':
     num_error = 0
     for data in output_datas:
         answers = align(args.dataset, question_string, data, ground_truth_datas)
-        results = data['results']
+        if "cot" in args.output_file:
+            results = data['cot_result']
+        elif "io" in args.output_file:
+            results = data['io_result']
+        else:
+            results = data['results']
         if check_string(results):
             response = clean_results(results)
             if response=="NULL":
