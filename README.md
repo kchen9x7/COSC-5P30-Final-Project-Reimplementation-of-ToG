@@ -4,7 +4,7 @@ This project is a personal course project based on the repository [link](https:/
 The project is aimed to reference and understand the work by Sun et al. (2024), and to reproduce the result. It is entirely used for academic purposes not meant be commercialized or redistributed. Please inform should there be a copyright conflict.
 The source code of this repository may differ from the original repository referenced as it is modified for running locally.
 
-Below is the steps on how to set up the KG for Freebase based on what is provided by the author and personal experience:
+For the scope of this personal project, only Freebase is used as the KG due to the time and cost constraint. Below is the steps on how to set up the KG for Freebase based on what is provided by the author and personal experience:
 
 ## Freebase Setup
 
