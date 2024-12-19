@@ -19,4 +19,6 @@ python main_freebase.py \  # if you wanna use Wikidata as KG source, run main_wi
 
 All the pruning and reasoning prompts utilized in the experiment are in the `prompt_list.py` file.
 
-For eval, please see `eval/README.md` file.
+### How to eval
+Before running eval.py, please make sure to run the jsonl2json.py to convert the jsonl outfile for json as this is the format needed for eval.
+After finish ToG and generating the result file (such as `ToG_cwq.jsonl` or `CoT_cwq.jsonl`), proceed to the "eval" directory `README.md`.
