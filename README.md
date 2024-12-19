@@ -73,6 +73,9 @@ rdf_loader_run();
 
 ## Test example
 Please use checkFreebaseDBConnection.py under the ToG folder to test the connectivity
+
+## Running the code
+Please proceed to the "ToG" or the "CoT" directory for the `README.md`.
 ## 
 
 ## Reference
