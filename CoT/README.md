@@ -32,4 +32,5 @@ python cot_io.py \
 ```
 
 ### How to eval
-After finish ToG and generating the result file (such as `CoT_cwq.jsonl`), proceed to the "eval" directory `README.md`.
+Before running eval.py, please make sure to run the jsonl2json.py to convert the jsonl outfile for json as this is the format needed for eval.
+After finish ToG and generating the result file (such as `ToG_cwq.jsonl` or `CoT_cwq.jsonl`), proceed to the "eval" directory `README.md`.
